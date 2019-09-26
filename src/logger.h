@@ -19,4 +19,6 @@ void log_warn(char* msg);
 //only errors
 void log_err(char* msg);
 
+void log_err_detail(char* msg, char* detail, int pos);
+
 #endif

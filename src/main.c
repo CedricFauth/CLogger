@@ -13,6 +13,7 @@ int main(){
     log_info("This is an information");
     log_warn("Here is a warning");
     log_err("Oh no that's an error");
+    log_err_detail("An Error occured", "That's the error", 3);
 
     return 0;
 }
