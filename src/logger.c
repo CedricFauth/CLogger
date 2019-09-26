@@ -21,5 +21,5 @@ void log_warn(char* msg){
 }
 
 void log_err(char* msg){
-    if(INFO >= LEVEL) printf("%s[ERROR]%s %s\n",RED, RESET, msg);
+    if(INFO >= LEVEL) printf("%s[ERROR] %s%s%s%s\n",RED, RESET, BOLD, msg, RESET);
 }
