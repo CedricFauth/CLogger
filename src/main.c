@@ -2,13 +2,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ANSI_RED_BOLD "\033[31m\033[1m"
-#define ANSI_RESET "\033[0m"
+#include "logger.h"
 
 int main(){
 
     printf("Hello World\n");
-    printf(ANSI_RED_BOLD "This text is RED!" ANSI_RESET "\n");
+
+    set_log_level(INFO);
+    
+    log_info("This is an information");
+    log_warn("Here is a warning");
+    log_err("Oh no that's an error");
 
     return 0;
 }
